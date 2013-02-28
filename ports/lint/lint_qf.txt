@@ -1,0 +1,944 @@
+
+--- Module:   ..\..\qf\source\qa_defer.cpp (C++)
+_
+}
+..\..\qf\source\qa_defer.cpp  45  Note 952: Parameter 'e' (line 43) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qa_defer.cpp  43  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qa_defer.cpp  45  Note 952: Parameter 'eq' (line 43) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qa_defer.cpp  43  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qa_defer.cpp  45  Info 1762: Member function
+    'QP::QActive::defer(QP::QEQueue *, const QP::QEvent *)' could be made const
+    [MISRA C++ Rule 9-3-3]
+        _
+        return (uint8_t)1;                                   // event recalled
+..\..\qf\source\qa_defer.cpp  72  Note 904: Return statement before end of
+    function 'QP::QActive::recall(QP::QEQueue *)' [MISRA C++ Rule 6-6-5]
+        _
+        return (uint8_t)0;                               // event not recalled
+..\..\qf\source\qa_defer.cpp  75  Note 904: Return statement before end of
+    function 'QP::QActive::recall(QP::QEQueue *)' [MISRA C++ Rule 6-6-5]
+_
+}
+..\..\qf\source\qa_defer.cpp  77  Note 952: Parameter 'eq' (line 47) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qa_defer.cpp  47  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qa_fifo.cpp (C++)
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_POST_FIFO, QS::aoObj_, this)
+..\..\qf\source\qa_fifo.cpp  54  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_POST_FIFO, QS::aoObj_, this)
+..\..\qf\source\qa_fifo.cpp  54  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_POST_FIFO, QS::aoObj_, this)
+..\..\qf\source\qa_fifo.cpp  54  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qa_fifo.cpp: line 54] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qa_fifo.cpp  54  Info 831: Reference cited in prior message
+                                   _
+#... t)0) { QK_sched_(p); } } else ((void)0) /*lint -restore */
+        QACTIVE_EQUEUE_SIGNAL_(this);                // signal the event queue
+..\..\qf\source\qa_fifo.cpp  71  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 6-4-1, left brace expected for if and else
+                                       _
+        m_eQueue.m_ring[m_eQueue.m_head] = e;//insert e into the buffer (FIFO)
+..\..\qf\source\qa_fifo.cpp  76  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+_
+}
+..\..\qf\source\qa_fifo.cpp  88  Note 952: Parameter 'e' (line 46) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qa_fifo.cpp  46  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qa_get_.cpp (C++)
+                                                             _
+        m_eQueue.m_frontEvt = m_eQueue.m_ring[m_eQueue.m_tail];
+..\..\qf\source\qa_get_.cpp  55  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+                                                           _
+#...                                                  if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_GET, QS::aoObj_, this)
+..\..\qf\source\qa_get_.cpp  63  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                           _
+#...                                                  if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_GET, QS::aoObj_, this)
+..\..\qf\source\qa_get_.cpp  63  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                           _
+#...                                                  if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_GET, QS::aoObj_, this)
+..\..\qf\source\qa_get_.cpp  63  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qa_get_.cpp: line 63] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qa_get_.cpp  63  Info 831: Reference cited in prior message
+                                                                _
+#...                                                       if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_GET_LAST, QS::aoObj_, this)
+..\..\qf\source\qa_get_.cpp  76  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                                _
+#...                                                       if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_GET_LAST, QS::aoObj_, this)
+..\..\qf\source\qa_get_.cpp  76  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                                _
+#...                                                       if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_GET_LAST, QS::aoObj_, this)
+..\..\qf\source\qa_get_.cpp  76  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qa_get_.cpp: line 76] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qa_get_.cpp  76  Info 831: Reference cited in prior message
+_
+}
+..\..\qf\source\qa_get_.cpp  98  Note 952: Parameter 'prio' (line 88) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qa_get_.cpp  88  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qa_lifo.cpp (C++)
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_POST_LIFO, QS::aoObj_, this)
+..\..\qf\source\qa_lifo.cpp  49  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_POST_LIFO, QS::aoObj_, this)
+..\..\qf\source\qa_lifo.cpp  49  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_POST_LIFO, QS::aoObj_, this)
+..\..\qf\source\qa_lifo.cpp  49  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qa_lifo.cpp: line 49] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qa_lifo.cpp  49  Info 831: Reference cited in prior message
+                                   _
+#... t)0) { QK_sched_(p); } } else ((void)0) /*lint -restore */
+        QACTIVE_EQUEUE_SIGNAL_(this);                // signal the event queue
+..\..\qf\source\qa_lifo.cpp  65  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 6-4-1, left brace expected for if and else
+                                       _
+        m_eQueue.m_ring[m_eQueue.m_tail] = m_eQueue.m_frontEvt;
+..\..\qf\source\qa_lifo.cpp  76  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+_
+}
+..\..\qf\source\qa_lifo.cpp  85  Note 952: Parameter 'e' (line 45) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qa_lifo.cpp  45  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qa_run.cpp (C++)
+                      _
+    } while (m_running); // loop until m_running is cleared in QActive::stop()
+..\..\qf\source\qa_run.cpp  46  Note 909: Implicit conversion from unsigned
+    char to bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+
+--- Module:   ..\..\qf\source\qa_sub.cpp (C++)
+    _
+    QF_CRIT_STAT_;
+..\..\qf\source\qa_sub.cpp  51  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 6-2-3, null statement not in line by itself
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_SUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_sub.cpp  54  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_SUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_sub.cpp  54  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_SUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_sub.cpp  54  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qa_sub.cpp: line 54] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qa_sub.cpp  54  Info 831: Reference cited in prior message
+                      _
+    QF_subscrList_[sig].m_bits[i] |= Q_ROM_BYTE(QF_pwr2Lkup[p]);
+..\..\qf\source\qa_sub.cpp  60  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+_
+}
+..\..\qf\source\qa_sub.cpp  62  Note 952: Parameter 'sig' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qa_sub.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qa_usub.cpp (C++)
+                                                               _
+#...                                                      if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_UNSUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_usub.cpp  54  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                               _
+#...                                                      if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_UNSUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_usub.cpp  54  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                               _
+#...                                                      if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_UNSUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_usub.cpp  54  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qa_usub.cpp: line 54] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qa_usub.cpp  54  Info 831: Reference cited in prior message
+                      _
+    QF_subscrList_[sig].m_bits[i] &= Q_ROM_BYTE(QF_invPwr2Lkup[p]);
+..\..\qf\source\qa_usub.cpp  60  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+_
+}
+..\..\qf\source\qa_usub.cpp  62  Note 952: Parameter 'sig' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qa_usub.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qa_usuba.cpp (C++)
+                               _
+        if ((QF_subscrList_[sig].m_bits[i] & Q_ROM_BYTE(QF_pwr2Lkup[p]))
+..\..\qf\source\qa_usuba.cpp  53  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+                 _
+             != 0)
+..\..\qf\source\qa_usuba.cpp  54  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-4, Implicit conversion changes signedness
+                                                                       _
+#...                                                              if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_UNSUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_usuba.cpp  57  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                                       _
+#...                                                              if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_UNSUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_usuba.cpp  57  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                                       _
+#...                                                              if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_UNSUBSCRIBE, QS::aoObj_, this)
+..\..\qf\source\qa_usuba.cpp  57  Info 774: Boolean within 'if' always
+    evaluates to False [Reference: file ..\..\qf\source\qa_usuba.cpp: line 57]
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9],
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qa_usuba.cpp  57  Info 831: Reference cited in prior message
+                              _
+            QF_subscrList_[sig].m_bits[i] &= Q_ROM_BYTE(QF_invPwr2Lkup[p]);
+..\..\qf\source\qa_usuba.cpp  63  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+
+--- Module:   ..\..\qf\source\qeq_fifo.cpp (C++)
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_POST_FIFO, QS::eqObj_, this)
+..\..\qf\source\qeq_fifo.cpp  46  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_POST_FIFO, QS::eqObj_, this)
+..\..\qf\source\qeq_fifo.cpp  46  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_POST_FIFO, QS::eqObj_, this)
+..\..\qf\source\qeq_fifo.cpp  46  Info 774: Boolean within 'if' always
+    evaluates to False [Reference: file ..\..\qf\source\qeq_fifo.cpp: line 46]
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9],
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qeq_fifo.cpp  46  Info 831: Reference cited in prior message
+                     _
+        m_ring[m_head] = e;             // insert event into the buffer (FIFO)
+..\..\qf\source\qeq_fifo.cpp  67  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+_
+}
+..\..\qf\source\qeq_fifo.cpp  79  Note 952: Parameter 'e' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qeq_fifo.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qeq_get.cpp (C++)
+                                      _
+            m_frontEvt = m_ring[m_tail];         // remove event from the tail
+..\..\qf\source\qeq_get.cpp  54  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+                                                               _
+#...                                                      if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_GET, QS::eqObj_, this)
+..\..\qf\source\qeq_get.cpp  62  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                               _
+#...                                                      if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_GET, QS::eqObj_, this)
+..\..\qf\source\qeq_get.cpp  62  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                               _
+#...                                                      if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_GET, QS::eqObj_, this)
+..\..\qf\source\qeq_get.cpp  62  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qeq_get.cpp: line 62] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qeq_get.cpp  62  Info 831: Reference cited in prior message
+                                                                    _
+#...                                                           if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_GET_LAST, QS::eqObj_, this)
+..\..\qf\source\qeq_get.cpp  74  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                                    _
+#...                                                           if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_GET_LAST, QS::eqObj_, this)
+..\..\qf\source\qeq_get.cpp  74  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                                    _
+#...                                                           if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_GET_LAST, QS::eqObj_, this)
+..\..\qf\source\qeq_get.cpp  74  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qeq_get.cpp: line 74] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qeq_get.cpp  74  Info 831: Reference cited in prior message
+
+--- Module:   ..\..\qf\source\qeq_init.cpp (C++)
+                                                 _
+#...  -e506 -e774 -e572 -e778 -e912 -e717 */if (0) { /*lint -restore */
+    QS_BEGIN_(QS_QF_EQUEUE_INIT, QS::eqObj_, this)
+..\..\qf\source\qeq_init.cpp  49  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+_
+}
+..\..\qf\source\qeq_init.cpp  53  Note 952: Parameter 'qLen' (line 39) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qeq_init.cpp  39  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qeq_lifo.cpp (C++)
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_POST_LIFO, QS::eqObj_, this)
+..\..\qf\source\qeq_lifo.cpp  46  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_POST_LIFO, QS::eqObj_, this)
+..\..\qf\source\qeq_lifo.cpp  46  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                             _
+#...                                                    if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_EQUEUE_POST_LIFO, QS::eqObj_, this)
+..\..\qf\source\qeq_lifo.cpp  46  Info 774: Boolean within 'if' always
+    evaluates to False [Reference: file ..\..\qf\source\qeq_lifo.cpp: line 46]
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9],
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qeq_lifo.cpp  46  Info 831: Reference cited in prior message
+                     _
+        m_ring[m_tail] = m_frontEvt;               // buffer the old front evt
+..\..\qf\source\qeq_lifo.cpp  69  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+_
+}
+..\..\qf\source\qeq_lifo.cpp  80  Note 952: Parameter 'e' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qeq_lifo.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qf_act.cpp (C++)
+      _
+const char Q_ROM * Q_ROM_VAR QF::getVersion(void) {
+..\..\qf\source\qf_act.cpp  48  Note 963: Qualifier const or volatile precedes
+    a type; use +fqb to reverse the test
+                                          _
+        (char)(((QP_VERSION >>  4U) & 0xFU) + (uint8_t)'0'),
+..\..\qf\source\qf_act.cpp  54  Info 778: Constant expression evaluates to 0 in
+    operation '&'
+                                          _
+        (char)((QP_VERSION          & 0xFU) + (uint8_t)'0'),
+..\..\qf\source\qf_act.cpp  55  Info 778: Constant expression evaluates to 0 in
+    operation '&'
+                                                    _
+#...                                           if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_ADD, QS::aoObj_, a)
+..\..\qf\source\qf_act.cpp  72  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                    _
+#...                                           if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_ADD, QS::aoObj_, a)
+..\..\qf\source\qf_act.cpp  72  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                    _
+#...                                           if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_ADD, QS::aoObj_, a)
+..\..\qf\source\qf_act.cpp  72  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qf_act.cpp: line 72] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qf_act.cpp  72  Info 831: Reference cited in prior message
+_
+}
+..\..\qf\source\qf_act.cpp  79  Note 952: Parameter 'a' (line 61) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_act.cpp  61  Info 830: Location cited in prior message
+                                                       _
+#...                                              if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_REMOVE, QS::aoObj_, a)
+..\..\qf\source\qf_act.cpp  92  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                       _
+#...                                              if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_REMOVE, QS::aoObj_, a)
+..\..\qf\source\qf_act.cpp  92  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                       _
+#...                                              if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_ACTIVE_REMOVE, QS::aoObj_, a)
+..\..\qf\source\qf_act.cpp  92  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qf_act.cpp: line 92] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qf_act.cpp  92  Info 831: Reference cited in prior message
+_
+}
+..\..\qf\source\qf_act.cpp  99  Note 952: Parameter 'a' (line 81) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_act.cpp  81  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qf_gc.cpp (C++)
+                                                                   _
+#...                                                          if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_GC_ATTEMPT, (void *)0, (void *)0)
+..\..\qf\source\qf_gc.cpp  50  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                                   _
+#...                                                          if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_GC_ATTEMPT, (void *)0, (void *)0)
+..\..\qf\source\qf_gc.cpp  50  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                                   _
+#...                                                          if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_GC_ATTEMPT, (void *)0, (void *)0)
+..\..\qf\source\qf_gc.cpp  50  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qf_gc.cpp: line 50] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qf_gc.cpp  50  Info 831: Reference cited in prior message
+                                                      _
+            uint8_t idx = (uint8_t)(EVT_POOL_ID(e) - 1);
+..\..\qf\source\qf_gc.cpp  60  Note 1960: Violates MISRA C++ 2008 Required Rule
+    5-0-4, Implicit conversion changes signedness
+                                                           _
+#...                                                  if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_GC, (void *)0, (void *)0)
+..\..\qf\source\qf_gc.cpp  62  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                           _
+#...                                                  if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_GC, (void *)0, (void *)0)
+..\..\qf\source\qf_gc.cpp  62  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                           _
+#...                                                  if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_GC, (void *)0, (void *)0)
+..\..\qf\source\qf_gc.cpp  62  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qf_gc.cpp: line 62] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qf_gc.cpp  62  Info 831: Reference cited in prior message
+                        _
+            ((QEvent *)e)->~QEvent();     // call the xtor, cast 'const' away,
+..\..\qf\source\qf_gc.cpp  75  Note 1960: Violates MISRA C++ 2008 Required Rule
+    5-2-5, attempt to cast away const/volatile from a pointer or reference
+..\..\qf\source\qf_gc.cpp  75  Note 929: cast from pointer to pointer [MISRA
+    C++ Rule 5-2-7]
+                                                    _
+            QF_EPOOL_PUT_(QF_pool_[idx], (QEvent *)e);   // cast 'const' away,
+..\..\qf\source\qf_gc.cpp  79  Note 1960: Violates MISRA C++ 2008 Required Rule
+    5-2-5, attempt to cast away const/volatile from a pointer or reference
+..\..\qf\source\qf_gc.cpp  79  Note 929: cast from pointer to pointer [MISRA
+    C++ Rule 5-2-7]
+_
+}
+..\..\qf\source\qf_gc.cpp  83  Note 952: Parameter 'e' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_gc.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qf_log2.cpp (C++)
+
+--- Module:   ..\..\qf\source\qf_new.cpp (C++)
+                                             _
+#... 06 -e774 -e572 -e778 -e912 -e717 */if (0) { /*lint -restore */
+    QS_BEGIN_(QS_QF_NEW, (void *)0, (void *)0)
+..\..\qf\source\qf_new.cpp  51  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                      _
+    EVT_POOL_ID(e) = (uint8_t)(idx + 1);     // store the pool ID in the event
+..\..\qf\source\qf_new.cpp  62  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-4, Implicit conversion changes signedness
+_
+}
+..\..\qf\source\qf_new.cpp  66  Note 952: Parameter 'evtSize' (line 42) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_new.cpp  42  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qf_new.cpp  66  Note 952: Parameter 'sig' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_new.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qf_pool.cpp (C++)
+_
+}
+..\..\qf\source\qf_pool.cpp  55  Note 952: Parameter 'evtSize' (line 47) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_pool.cpp  47  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qf_pool.cpp  55  Note 952: Parameter 'poolSto' (line 47) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_pool.cpp  47  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qf_pool.cpp  55  Note 952: Parameter 'poolSize' (line 47) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_pool.cpp  47  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qf_psini.cpp (C++)
+_
+}
+..\..\qf\source\qf_psini.cpp  47  Note 952: Parameter 'maxSignal' (line 44)
+    could be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_psini.cpp  44  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qf_psini.cpp  47  Note 952: Parameter 'subscrSto' (line 44)
+    could be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_psini.cpp  44  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qf_pspub.cpp (C++)
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_PUBLISH, (void *)0, (void *)0)
+..\..\qf\source\qf_pspub.cpp  53  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_PUBLISH, (void *)0, (void *)0)
+..\..\qf\source\qf_pspub.cpp  53  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_PUBLISH, (void *)0, (void *)0)
+..\..\qf\source\qf_pspub.cpp  53  Info 774: Boolean within 'if' always
+    evaluates to False [Reference: file ..\..\qf\source\qf_pspub.cpp: line 53]
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9],
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qf_pspub.cpp  53  Info 831: Reference cited in prior message
+                                              _
+#...                  (sizeof(QF_subscrList_[0].m_bits) / sizeof(QF_subscrList_
+    uint8_t i = Q_DIM(QF_subscrList_[0].m_bits);// number of bytes in the list
+..\..\qf\source\qf_pspub.cpp  77  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+                                              _
+#... ist_[0].m_bits) / sizeof(QF_subscrList_[0].m_bits[0]))
+    uint8_t i = Q_DIM(QF_subscrList_[0].m_bits);// number of bytes in the list
+..\..\qf\source\qf_pspub.cpp  77  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+                                              _
+    uint8_t i = Q_DIM(QF_subscrList_[0].m_bits);// number of bytes in the list
+..\..\qf\source\qf_pspub.cpp  77  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-6, Implicit conversion of integer to smaller type
+                                           _
+        uint8_t tmp = QF_subscrList_[e->sig].m_bits[i];
+..\..\qf\source\qf_pspub.cpp  80  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+                                      _
+            p = (uint8_t)(p + (i << 3));                // adjust the priority
+..\..\qf\source\qf_pspub.cpp  84  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-10, Operators '~' and '<<' require recasting to underlying type
+    for sub-integers
+_
+}
+..\..\qf\source\qf_pspub.cpp  94  Note 952: Parameter 'e' (line 43) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qf_pspub.cpp  43  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qf_pwr2.cpp (C++)
+
+--- Module:   ..\..\qf\source\qf_tick.cpp (C++)
+                                                     _
+#...                                            if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TICK, (void *)0, (void *)0)
+..\..\qf\source\qf_tick.cpp  50  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                     _
+#...                                            if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TICK, (void *)0, (void *)0)
+..\..\qf\source\qf_tick.cpp  50  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                     _
+#...                                            if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TICK, (void *)0, (void *)0)
+..\..\qf\source\qf_tick.cpp  50  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qf_tick.cpp: line 50] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qf_tick.cpp  50  Info 831: Reference cited in prior message
+                                                                         _
+#...                                                                if (0) {
+                QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_AUTO_DISARM, QS::teObj_, t)
+..\..\qf\source\qf_tick.cpp  73  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                                         _
+#...                                                                if (0) {
+                QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_AUTO_DISARM, QS::teObj_, t)
+..\..\qf\source\qf_tick.cpp  73  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                                         _
+#...                                                                if (0) {
+                QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_AUTO_DISARM, QS::teObj_, t)
+..\..\qf\source\qf_tick.cpp  73  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qf_tick.cpp: line 73] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qf_tick.cpp  73  Info 831: Reference cited in prior message
+                                                              _
+#...                                                     if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_POST, QS::teObj_, t)
+..\..\qf\source\qf_tick.cpp  79  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                              _
+#...                                                     if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_POST, QS::teObj_, t)
+..\..\qf\source\qf_tick.cpp  79  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                              _
+#...                                                     if (0) {
+            QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_POST, QS::teObj_, t)
+..\..\qf\source\qf_tick.cpp  79  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qf_tick.cpp: line 79] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qf_tick.cpp  79  Info 831: Reference cited in prior message
+        _
+        }
+..\..\qf\source\qf_tick.cpp  95  Warning 550: Symbol 'dummy' (line 93) not
+    accessed [MISRA C++ Rule 0-1-4]
+..\..\qf\source\qf_tick.cpp  93  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qmp_get.cpp (C++)
+                                                         _
+#...                                                if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_MPOOL_GET, QS::mpObj_, m_start)
+..\..\qf\source\qmp_get.cpp  55  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                         _
+#...                                                if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_MPOOL_GET, QS::mpObj_, m_start)
+..\..\qf\source\qmp_get.cpp  55  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                         _
+#...                                                if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_MPOOL_GET, QS::mpObj_, m_start)
+..\..\qf\source\qmp_get.cpp  55  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qmp_get.cpp: line 55] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qmp_get.cpp  55  Info 831: Reference cited in prior message
+_
+}
+..\..\qf\source\qmp_get.cpp  75  Note 952: Parameter 'poolId' (line 66) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qmp_get.cpp  66  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qmp_init.cpp (C++)
+                                _
+        fb->m_next = &fb[nblocks];                      // setup the next link
+..\..\qf\source\qmp_init.cpp  70  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-15, pointer arithmetic other than array indexing used
+                                                   _
+#... e  -e506 -e774 -e572 -e778 -e912 -e717 */if (0) { /*lint -restore */
+    QS_BEGIN_(QS_QF_MPOOL_INIT, QS::mpObj_, m_start)
+..\..\qf\source\qmp_init.cpp  83  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+_
+}
+..\..\qf\source\qmp_init.cpp  87  Note 952: Parameter 'poolSto' (line 42) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qmp_init.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qmp_put.cpp (C++)
+                                                         _
+#...                                                if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_MPOOL_PUT, QS::mpObj_, m_start)
+..\..\qf\source\qmp_put.cpp  54  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                         _
+#...                                                if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_MPOOL_PUT, QS::mpObj_, m_start)
+..\..\qf\source\qmp_put.cpp  54  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                         _
+#...                                                if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_MPOOL_PUT, QS::mpObj_, m_start)
+..\..\qf\source\qmp_put.cpp  54  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qmp_put.cpp: line 54] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qmp_put.cpp  54  Info 831: Reference cited in prior message
+_
+}
+..\..\qf\source\qmp_put.cpp  61  Note 952: Parameter 'b' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qmp_put.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qte_arm.cpp (C++)
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_ARM, QS::teObj_, this)
+..\..\qf\source\qte_arm.cpp  56  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_ARM, QS::teObj_, this)
+..\..\qf\source\qte_arm.cpp  56  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_ARM, QS::teObj_, this)
+..\..\qf\source\qte_arm.cpp  56  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qte_arm.cpp: line 56] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qte_arm.cpp  56  Info 831: Reference cited in prior message
+_
+}
+..\..\qf\source\qte_arm.cpp  70  Note 952: Parameter 'act' (line 45) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qte_arm.cpp  45  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qte_arm.cpp  70  Note 952: Parameter 'nTicks' (line 45) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qte_arm.cpp  45  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qte_ctor.cpp (C++)
+_
+}
+..\..\qf\source\qte_ctor.cpp  56  Note 952: Parameter 's' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qte_ctor.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qte_ctr.cpp (C++)
+                   _
+    QTimeEvtCtr ctr;
+..\..\qf\source\qte_ctr.cpp  40  Warning 578: Declaration of symbol 'ctr' hides
+    symbol 'QP::QTimeEvt::ctr(void)' (line 39) [MISRA C++ Rule 2-10-2]
+..\..\qf\source\qte_ctr.cpp  39  Info 830: Location cited in prior message
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_CTR, QS::teObj_, this)
+..\..\qf\source\qte_ctr.cpp  50  Warning 506: Constant value Boolean [MISRA C++
+    Rule 0-1-1]
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_CTR, QS::teObj_, this)
+..\..\qf\source\qte_ctr.cpp  50  Note 909: Implicit conversion from int to bool
+    [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                        _
+#...                                               if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_CTR, QS::teObj_, this)
+..\..\qf\source\qte_ctr.cpp  50  Info 774: Boolean within 'if' always evaluates
+    to False [Reference: file ..\..\qf\source\qte_ctr.cpp: line 50] [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++
+    Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qte_ctr.cpp  50  Info 831: Reference cited in prior message
+_
+}
+..\..\qf\source\qte_ctr.cpp  60  Info 1762: Member function
+    'QP::QTimeEvt::ctr(void)' could be made const [MISRA C++ Rule 9-3-3]
+
+--- Module:   ..\..\qf\source\qte_darm.cpp (C++)
+                                                               _
+#...                                                      if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_DISARM, QS::teObj_, this)
+..\..\qf\source\qte_darm.cpp  57  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                               _
+#...                                                      if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_DISARM, QS::teObj_, this)
+..\..\qf\source\qte_darm.cpp  57  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                               _
+#...                                                      if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_DISARM, QS::teObj_, this)
+..\..\qf\source\qte_darm.cpp  57  Info 774: Boolean within 'if' always
+    evaluates to False [Reference: file ..\..\qf\source\qte_darm.cpp: line 57]
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9],
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qte_darm.cpp  57  Info 831: Reference cited in prior message
+                                                                       _
+#...                                                              if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_DISARM_ATTEMPT, QS::teObj_, this)
+..\..\qf\source\qte_darm.cpp  68  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                                       _
+#...                                                              if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_DISARM_ATTEMPT, QS::teObj_, this)
+..\..\qf\source\qte_darm.cpp  68  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                                       _
+#...                                                              if (0) {
+        QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_DISARM_ATTEMPT, QS::teObj_, this)
+..\..\qf\source\qte_darm.cpp  68  Info 774: Boolean within 'if' always
+    evaluates to False [Reference: file ..\..\qf\source\qte_darm.cpp: line 68]
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9],
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qte_darm.cpp  68  Info 831: Reference cited in prior message
+
+--- Module:   ..\..\qf\source\qte_rarm.cpp (C++)
+                                                          _
+#...                                                 if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_REARM, QS::teObj_, this)
+..\..\qf\source\qte_rarm.cpp  63  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                          _
+#...                                                 if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_REARM, QS::teObj_, this)
+..\..\qf\source\qte_rarm.cpp  63  Note 909: Implicit conversion from int to
+    bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                                                          _
+#...                                                 if (0) {
+    QS_BEGIN_NOCRIT_(QS_QF_TIMEEVT_REARM, QS::teObj_, this)
+..\..\qf\source\qte_rarm.cpp  63  Info 774: Boolean within 'if' always
+    evaluates to False [Reference: file ..\..\qf\source\qte_rarm.cpp: line 63]
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9],
+    [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qf\source\qte_rarm.cpp  63  Info 831: Reference cited in prior message
+_
+}
+..\..\qf\source\qte_rarm.cpp  74  Note 952: Parameter 'nTicks' (line 42) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qte_rarm.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qf\source\qvanilla.cpp (C++)
+                 _
+    static const char Q_ROM version[] = "4.3.00";
+..\..\qf\source\qvanilla.cpp  57  Note 963: Qualifier const or volatile
+    precedes a type; use +fqb to reverse the test
+                      _
+        QF_INT_DISABLE();
+..\..\qf\source\qvanilla.cpp  74  Error 1055: Symbol 'QP::QF_INT_DISABLE'
+    undeclared, assumed to return int
+..\..\qf\source\qvanilla.cpp  74  Info 746: call to function
+    'QP::QF_INT_DISABLE()' not made in the presence of a prototype
+..\..\qf\source\qvanilla.cpp  74  Warning 534: Ignoring return value of
+    function 'QP::QF_INT_DISABLE()' (compare with line 74) [MISRA C++ Rules
+    0-1-7 and 0-3-2], [MISRA C++ Rules 0-1-7 and 0-3-2]
+..\..\qf\source\qvanilla.cpp  74  Info 830: Location cited in prior message
+                                   _
+        if (QF_readySet_.notEmpty()) {
+..\..\qf\source\qvanilla.cpp  75  Note 909: Implicit conversion from unsigned
+    char to bool [MISRA C++ Rules 5-0-13, 5-0-14, 5-3-2]
+                         _
+            QF_INT_ENABLE();
+..\..\qf\source\qvanilla.cpp  79  Error 1055: Symbol 'QP::QF_INT_ENABLE'
+    undeclared, assumed to return int
+..\..\qf\source\qvanilla.cpp  79  Info 746: call to function
+    'QP::QF_INT_ENABLE()' not made in the presence of a prototype
+..\..\qf\source\qvanilla.cpp  79  Warning 534: Ignoring return value of
+    function 'QP::QF_INT_ENABLE()' (compare with line 79) [MISRA C++ Rules
+    0-1-7 and 0-3-2], [MISRA C++ Rules 0-1-7 and 0-3-2]
+..\..\qf\source\qvanilla.cpp  79  Info 830: Location cited in prior message
+                       _
+            QF::onIdle();                                        // see NOTE01
+..\..\qf\source\qvanilla.cpp  86  Error 118: Too few arguments (0) for
+    prototype 'QP::QF::onIdle(int)'
+_
+}
+..\..\qf\source\qvanilla.cpp  105  Note 952: Parameter 'qLen' (line 92) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qvanilla.cpp  92  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qvanilla.cpp  105  Note 952: Parameter 'stkSto' (line 93) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qvanilla.cpp  93  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qvanilla.cpp  105  Info 818: Pointer parameter 'stkSto' (line
+    93) could be declared as pointing to const [MISRA C++ Rule 7-1-2]
+..\..\qf\source\qvanilla.cpp  93  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qvanilla.cpp  105  Note 952: Parameter 'prio' (line 91) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qvanilla.cpp  91  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qvanilla.cpp  105  Note 952: Parameter 'ie' (line 94) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qf\source\qvanilla.cpp  94  Info 830: Location cited in prior message
+_
+}
+..\..\qf\source\qvanilla.cpp  109  Info 1762: Member function
+    'QP::QActive::stop(void)' could be made const [MISRA C++ Rule 9-3-3]
+
+--- Additional Misra Messages:
+
+Note 1960: Violates MISRA C++ 2008 Required Rule 0-1-8, Void return type for
+    function without external side-effects: QP::QF::init(void)
+Note 1960: Violates MISRA C++ 2008 Required Rule 0-1-8, Void return type for
+    function without external side-effects: QP::QPSet8::insert(unsigned char)
+    volatile
+Note 1960: Violates MISRA C++ 2008 Required Rule 0-1-8, Void return type for
+    function without external side-effects: QP::QPSet8::remove(unsigned char)
+    volatile
+
+--- Global Wrap-up
+
+Info 765: external 'QF_readySet_' (line 47, file ..\..\qf\source\qvanilla.cpp)
+    could be made static [MISRA C++ Rule 3-3-1]
+..\..\qf\source\qvanilla.cpp  47  Info 830: Location cited in prior message
+Info 765: external 'QF_currPrio_' (line 50, file ..\..\qf\source\qvanilla.cpp)
+    could be made static [MISRA C++ Rule 3-3-1]
+..\..\qf\source\qvanilla.cpp  50  Info 830: Location cited in prior message
+Warning 552: Symbol 'QF_currPrio_' (line 50, file ..\..\qf\source\qvanilla.cpp)
+    not accessed [MISRA C++ Rule 0-1-4]
+..\..\qf\source\qvanilla.cpp  50  Info 830: Location cited in prior message
+Info 765: external 'QF_intNest_' (line 51, file ..\..\qf\source\qvanilla.cpp)
+    could be made static [MISRA C++ Rule 3-3-1]
+..\..\qf\source\qvanilla.cpp  51  Info 830: Location cited in prior message
+Info 714: Symbol 'QF_intNest_' (line 51, file ..\..\qf\source\qvanilla.cpp) not
+    referenced [MISRA C++ Rule 0-1-3, 0-1-10]
+..\..\qf\source\qvanilla.cpp  51  Info 830: Location cited in prior message
+Info 714: Symbol 'QP::QF_intLockNest_' (line 44, file ..\..\qf\source\qf_act.cpp)
+    not referenced [MISRA C++ Rule 0-1-3, 0-1-10]
+..\..\qf\source\qf_act.cpp  44  Info 830: Location cited in prior message
+Warning 526: Symbol 'QP::QF_INT_DISABLE()' (line 74, file ..\..\qf\source\qvanilla.cpp)
+    not defined
+..\..\qf\source\qvanilla.cpp  74  Info 830: Location cited in prior message
+Warning 628: no argument information provided for function 'QP::QF_INT_DISABLE()'
+    (line 74, file ..\..\qf\source\qvanilla.cpp)
+..\..\qf\source\qvanilla.cpp  74  Info 830: Location cited in prior message
+Warning 526: Symbol 'QP::QF_INT_ENABLE()' (line 79, file ..\..\qf\source\qvanilla.cpp)
+    not defined
+..\..\qf\source\qvanilla.cpp  79  Info 830: Location cited in prior message
+Warning 628: no argument information provided for function 'QP::QF_INT_ENABLE()'
+    (line 79, file ..\..\qf\source\qvanilla.cpp)
+..\..\qf\source\qvanilla.cpp  79  Info 830: Location cited in prior message
+Note 974: Worst case function for stack usage: 'QP::QF::run' is finite,
+    requires 85 bytes total stack in calling 'QP::QF::gc'. See +stack for a
+    full report. [MISRA C++ Rule 7-5-4]

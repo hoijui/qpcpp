@@ -1,0 +1,53 @@
+
+--- Module:   ..\..\qep\source\qep.cpp (C++)
+
+--- Module:   ..\..\qep\source\qfsm_dis.cpp (C++)
+_
+}
+..\..\qep\source\qfsm_dis.cpp  81  Note 952: Parameter 'e' (line 39) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qep\source\qfsm_dis.cpp  39  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qep\source\qfsm_ini.cpp (C++)
+_
+}
+..\..\qep\source\qfsm_ini.cpp  64  Note 952: Parameter 'e' (line 45) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qep\source\qfsm_ini.cpp  45  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qep\source\qhsm_dis.cpp (C++)
+_
+}
+..\..\qep\source\qhsm_dis.cpp  263  Note 952: Parameter 'e' (line 42) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qep\source\qhsm_dis.cpp  42  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qep\source\qhsm_in.cpp (C++)
+_
+}
+..\..\qep\source\qhsm_in.cpp  54  Note 952: Parameter 'state' (line 39) could
+    be declared const [MISRA C++ Rule 7-1-1]
+..\..\qep\source\qhsm_in.cpp  39  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qep\source\qhsm_ini.cpp (C++)
+                                 _
+    t = (QStateHandler)&QHsm::top;              // HSM starts in the top state
+..\..\qep\source\qhsm_ini.cpp  52  Note 929: cast from pointer to pointer
+    [MISRA C++ Rule 5-2-7]
+                               _
+            QEP_ENTER_(path[ip]);                            // enter path[ip]
+..\..\qep\source\qhsm_ini.cpp  76  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 6-2-3, null statement not in line by itself
+_
+}
+..\..\qep\source\qhsm_ini.cpp  89  Note 952: Parameter 'e' (line 45) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qep\source\qhsm_ini.cpp  45  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qep\source\qhsm_top.cpp (C++)
+
+--- Global Wrap-up
+
+Note 974: Worst case function for stack usage: 'QP::QFsm::dispatch' is
+    non-deterministic, calls through a function pointer. See +stack for a full
+    report. [MISRA C++ Rule 7-5-4]

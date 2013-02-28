@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>dpp-qk/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>281</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>16</ColumnWidth0><ColumnWidth1>1152</ColumnWidth1><ColumnWidth2>307</ColumnWidth2><ColumnWidth3>76</ColumnWidth3></Build>
+    <Debug-Log><ColumnWidth0>16</ColumnWidth0><ColumnWidth1>1319</ColumnWidth1></Debug-Log><TerminalIO/></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-9056-15295</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>dpp-qk</ExpandedNode><ExpandedNode>dpp-qk/CMSIS</ExpandedNode><ExpandedNode>dpp-qk/Source</ExpandedNode><ExpandedNode>dpp-qk/TexasInstruments</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-8010-15314</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-20785-30413</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane/><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-001f0d40><key>iaridepm.enu1</key></Toolbar-001f0d40></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>694</Bottom><Right>355</Right><x>-2</x><y>-2</y><xscreen>203</xscreen><yscreen>175</yscreen><sizeHorzCX>126480</sizeHorzCX><sizeHorzCY>174129</sizeHorzCY><sizeVertCX>222430</sizeVertCX><sizeVertCY>692537</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>266</Bottom><Right>1607</Right><x>-2</x><y>-2</y><xscreen>1609</xscreen><yscreen>268</yscreen><sizeHorzCX>1002492</sizeHorzCX><sizeHorzCY>266667</sizeHorzCY><sizeVertCX>126480</sizeVertCX><sizeVertCY>174129</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

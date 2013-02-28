@@ -1,0 +1,357 @@
+
+--- Module:   ..\..\qk\source\qk.cpp (C++)
+                        _
+#if (QF_MAX_ACTIVE <= 8U)
+..\..\qk\source\qk.cpp  39  Note 1960: Violates MISRA C++ 2008 Required Rule
+    5-0-4, Implicit conversion changes signedness
+                                          _
+        (char)(((QP_VERSION >>  4U) & 0xFU) + (uint8_t)'0'),
+..\..\qk\source\qk.cpp  72  Info 778: Constant expression evaluates to 0 in
+    operation '&'
+                                          _
+        (char)((QP_VERSION          & 0xFU) + (uint8_t)'0'),
+..\..\qk\source\qk.cpp  73  Info 778: Constant expression evaluates to 0 in
+    operation '&'
+                  _
+    QF_INT_DISABLE();
+..\..\qk\source\qk.cpp  97  Error 1055: Symbol 'QP::QF_INT_DISABLE' undeclared,
+    assumed to return int
+..\..\qk\source\qk.cpp  97  Info 746: call to function 'QP::QF_INT_DISABLE()'
+    not made in the presence of a prototype
+..\..\qk\source\qk.cpp  97  Warning 534: Ignoring return value of function
+    'QP::QF_INT_DISABLE()' (compare with line 97) [MISRA C++ Rules 0-1-7 and
+    0-3-2], [MISRA C++ Rules 0-1-7 and 0-3-2]
+..\..\qk\source\qk.cpp  97  Info 830: Location cited in prior message
+                 _
+    QF_INT_ENABLE();
+..\..\qk\source\qk.cpp  100  Error 1055: Symbol 'QP::QF_INT_ENABLE' undeclared,
+    assumed to return int
+..\..\qk\source\qk.cpp  100  Info 746: call to function 'QP::QF_INT_ENABLE()'
+    not made in the presence of a prototype
+..\..\qk\source\qk.cpp  100  Warning 534: Ignoring return value of function
+    'QP::QF_INT_ENABLE()' (compare with line 100) [MISRA C++ Rules 0-1-7 and
+    0-3-2], [MISRA C++ Rules 0-1-7 and 0-3-2]
+..\..\qk\source\qk.cpp  100  Info 830: Location cited in prior message
+_
+{
+..\..\qk\source\qk.cpp  111  Note 1960: Violates MISRA C++ 2008 Required Rule
+    8-4-2, function parameter list differs from prior declaration
+                                                                     _
+#... 60 */if (((uint8_t)0 < prio) && (prio <= (uint8_t)63)) { } else (Q_onAsser
+#...            Q_ASSERT(((uint8_t)0 < prio) && (prio <= (uint8_t)63))
+    Q_REQUIRE(((uint8_t)0 < prio) && (prio <= (uint8_t)QF_MAX_ACTIVE));
+..\..\qk\source\qk.cpp  112  Note 1960: Violates MISRA C++ 2008 Required Rule
+    6-4-1, left brace expected for if and else
+_
+}
+..\..\qk\source\qk.cpp  128  Note 952: Parameter 'qLen' (line 108) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qk\source\qk.cpp  108  Info 830: Location cited in prior message
+_
+}
+..\..\qk\source\qk.cpp  128  Note 952: Parameter 'tls' (line 109) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qk\source\qk.cpp  109  Info 830: Location cited in prior message
+_
+}
+..\..\qk\source\qk.cpp  128  Note 952: Parameter 'prio' (line 107) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qk\source\qk.cpp  107  Info 830: Location cited in prior message
+_
+}
+..\..\qk\source\qk.cpp  128  Note 952: Parameter 'flags' (line 109) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qk\source\qk.cpp  109  Info 830: Location cited in prior message
+_
+}
+..\..\qk\source\qk.cpp  128  Note 952: Parameter 'ie' (line 110) could be
+    declared const [MISRA C++ Rule 7-1-1]
+..\..\qk\source\qk.cpp  110  Info 830: Location cited in prior message
+_
+}
+..\..\qk\source\qk.cpp  132  Info 1762: Member function 'QP::QActive::stop(void)'
+    could be made const [MISRA C++ Rule 9-3-3]
+          _
+    using namespace QP;
+..\..\qk\source\qk.cpp  145  Note 1960: Violates MISRA C++ 2008 Required Rule
+    7-3-4, Using-directive used
+                                                   _
+    if ((p > QK_currPrio_) && (p > QK_ceilingPrio_)) {
+..\..\qk\source\qk.cpp  153  Note 1960: Violates MISRA C++ 2008 Required Rule
+    5-14-1, side effects on right hand of logical operator: '&&'
+        _
+        return p;
+..\..\qk\source\qk.cpp  155  Note 904: Return statement before end of function
+    'QK_schedPrio_(void)' [MISRA C++ Rule 6-6-5]
+        _
+        return (uint8_t)0;
+..\..\qk\source\qk.cpp  158  Note 904: Return statement before end of function
+    'QK_schedPrio_(void)' [MISRA C++ Rule 6-6-5]
+
+--- Module:   ..\..\qk\source\qk_ext.cpp (C++)
+          _
+    using namespace QP;
+..\..\qk\source\qk_ext.cpp  54  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 7-3-4, Using-directive used
+                    _
+#... (struct _reent *)(a)->m_thread /*lint -restore */
+            QK_TLS(a);                      // switch new thread-local storage
+..\..\qk\source\qk_ext.cpp  73  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 17-0-2, Re-use of C++ identifier pattern: _reent
+                                                      _
+#... >> 3U] & (1U << ((uint8_t)(QS_QK_SCHEDULE) & 7U))) != 0U) && (((QS::aoObj_
+        QS_BEGIN_NOCRIT_(QS_QK_SCHEDULE, QS::aoObj_, a)
+..\..\qk\source\qk_ext.cpp  77  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-10, Operators '~' and '<<' require recasting to underlying type
+    for sub-integers
+                       _
+#...            QS::end(); }
+        QS_END_NOCRIT_()
+..\..\qk\source\qk_ext.cpp  81  Info 725: Expected positive indentation from
+    line 77
+..\..\qk\source\qk_ext.cpp  77  Info 830: Location cited in prior message
+                     _
+        QF_INT_ENABLE();                  // unconditionally enable interrupts
+..\..\qk\source\qk_ext.cpp  83  Error 1055: Symbol 'QF_INT_ENABLE' undeclared,
+    assumed to return int
+..\..\qk\source\qk_ext.cpp  83  Info 746: call to function 'QF_INT_ENABLE()'
+    not made in the presence of a prototype
+..\..\qk\source\qk_ext.cpp  83  Warning 534: Ignoring return value of function
+    'QF_INT_ENABLE()' (compare with line 83) [MISRA C++ Rules 0-1-7 and 0-3-2],
+    [MISRA C++ Rules 0-1-7 and 0-3-2]
+..\..\qk\source\qk_ext.cpp  83  Info 830: Location cited in prior message
+                      _
+        QF_INT_DISABLE();                                // disable interrupts
+..\..\qk\source\qk_ext.cpp  90  Error 1055: Symbol 'QF_INT_DISABLE' undeclared,
+    assumed to return int
+..\..\qk\source\qk_ext.cpp  90  Info 746: call to function 'QF_INT_DISABLE()'
+    not made in the presence of a prototype
+..\..\qk\source\qk_ext.cpp  90  Warning 534: Ignoring return value of function
+    'QF_INT_DISABLE()' (compare with line 90) [MISRA C++ Rules 0-1-7 and
+    0-3-2], [MISRA C++ Rules 0-1-7 and 0-3-2]
+..\..\qk\source\qk_ext.cpp  90  Info 830: Location cited in prior message
+                                               _
+    } while ((p > pin) && (p > QK_ceilingPrio_));
+..\..\qk\source\qk_ext.cpp  96  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-14-1, side effects on right hand of logical operator: '&&'
+                _
+#... uct _reent *)(a)->m_thread /*lint -restore */
+        QK_TLS(a);                                 // restore the original TLS
+..\..\qk\source\qk_ext.cpp  105  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 17-0-2, Re-use of C++ identifier pattern: _reent
+
+--- Module:   ..\..\qk\source\qk_mutex.cpp (C++)
+                                                           _
+#... K) >> 3U] & (1U << ((uint8_t)(QS_QK_MUTEX_LOCK) & 7U))) != 0U) && ((((void
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_LOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  57  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-10, Operators '~' and '<<' require recasting to underlying type
+    for sub-integers
+                                                           _
+#... oid *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uint
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_LOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  57  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                           _
+#... oid *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uint
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_LOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  57  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                           _
+#... id *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uint8
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_LOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  57  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                           _
+#... id *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uint8
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_LOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  57  Note 948: Operator '==' always evaluates to
+    True [Reference: file ..\..\qk\source\qk_mutex.cpp: line 57] [MISRA C++
+    Rule 0-1-9]
+..\..\qk\source\qk_mutex.cpp  57  Info 831: Reference cited in prior message
+                                                           _
+#... id *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uint8
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_LOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  57  Note 944: Left argument for operator '||'
+    always evaluates to True [Reference: file ..\..\qk\source\qk_mutex.cpp:
+    line 57] [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1,
+    0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qk\source\qk_mutex.cpp  57  Info 831: Reference cited in prior message
+                                                           _
+#... id *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uint8
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_LOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  57  Note 944: Right argument for operator '&&'
+    always evaluates to True [Reference: file ..\..\qk\source\qk_mutex.cpp:
+    line 57] [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1,
+    0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qk\source\qk_mutex.cpp  57  Info 831: Reference cited in prior message
+                                                           _
+#... id *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uint8
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_LOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  57  Info 774: Boolean within 'right side of &&
+    within if' always evaluates to True [Reference: file ..\..\qk\source\qk_mutex.cpp:
+    line 57] [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1,
+    0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qk\source\qk_mutex.cpp  57  Info 831: Reference cited in prior message
+                   _
+#...        QS::end(); }
+    QS_END_NOCRIT_()
+..\..\qk\source\qk_mutex.cpp  61  Info 725: Expected positive indentation from
+    line 57
+..\..\qk\source\qk_mutex.cpp  57  Info 830: Location cited in prior message
+_
+}
+..\..\qk\source\qk_mutex.cpp  65  Note 952: Parameter 'prioCeiling' (line 49)
+    could be declared const [MISRA C++ Rule 7-1-1]
+..\..\qk\source\qk_mutex.cpp  49  Info 830: Location cited in prior message
+                                                             _
+#... K) >> 3U] & (1U << ((uint8_t)(QS_QK_MUTEX_UNLOCK) & 7U))) != 0U) && ((((vo
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_UNLOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  71  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-10, Operators '~' and '<<' require recasting to underlying type
+    for sub-integers
+                                                             _
+#... (void *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((ui
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_UNLOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  71  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                             _
+#... (void *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((ui
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_UNLOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  71  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                             _
+#... void *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uin
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_UNLOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  71  Warning 506: Constant value Boolean [MISRA
+    C++ Rule 0-1-1]
+                                                             _
+#... void *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uin
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_UNLOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  71  Note 948: Operator '==' always evaluates to
+    True [Reference: file ..\..\qk\source\qk_mutex.cpp: line 71] [MISRA C++
+    Rule 0-1-9]
+..\..\qk\source\qk_mutex.cpp  71  Info 831: Reference cited in prior message
+                                                             _
+#... void *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uin
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_UNLOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  71  Note 944: Left argument for operator '||'
+    always evaluates to True [Reference: file ..\..\qk\source\qk_mutex.cpp:
+    line 71] [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1,
+    0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qk\source\qk_mutex.cpp  71  Info 831: Reference cited in prior message
+                                                             _
+#... void *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uin
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_UNLOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  71  Note 944: Right argument for operator '&&'
+    always evaluates to True [Reference: file ..\..\qk\source\qk_mutex.cpp:
+    line 71] [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1,
+    0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qk\source\qk_mutex.cpp  71  Info 831: Reference cited in prior message
+                                                             _
+#... void *)0) == (void *)0) || (((void *)0) == ((void *)0)))) { QS::begin((uin
+    QS_BEGIN_NOCRIT_(QS_QK_MUTEX_UNLOCK, (void *)0, (void *)0)
+..\..\qk\source\qk_mutex.cpp  71  Info 774: Boolean within 'right side of &&
+    within if' always evaluates to True [Reference: file ..\..\qk\source\qk_mutex.cpp:
+    line 71] [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1,
+    0-1-2, 0-1-9], [MISRA C++ Rule 0-1-1, 0-1-2, 0-1-9]
+..\..\qk\source\qk_mutex.cpp  71  Info 831: Reference cited in prior message
+                   _
+#...        QS::end(); }
+    QS_END_NOCRIT_()
+..\..\qk\source\qk_mutex.cpp  75  Info 725: Expected positive indentation from
+    line 71
+..\..\qk\source\qk_mutex.cpp  71  Info 830: Location cited in prior message
+
+--- Module:   ..\..\qk\source\qk_sched.cpp (C++)
+          _
+    using namespace QP;
+..\..\qk\source\qk_sched.cpp  54  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 7-3-4, Using-directive used
+                    _
+#... (struct _reent *)(a)->m_thread /*lint -restore */
+            QK_TLS(a);                      // switch new thread-local storage
+..\..\qk\source\qk_sched.cpp  68  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 17-0-2, Re-use of C++ identifier pattern: _reent
+                                                      _
+#... >> 3U] & (1U << ((uint8_t)(QS_QK_SCHEDULE) & 7U))) != 0U) && (((QS::aoObj_
+        QS_BEGIN_NOCRIT_(QS_QK_SCHEDULE, QS::aoObj_, a)
+..\..\qk\source\qk_sched.cpp  72  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-0-10, Operators '~' and '<<' require recasting to underlying type
+    for sub-integers
+                       _
+#...            QS::end(); }
+        QS_END_NOCRIT_()
+..\..\qk\source\qk_sched.cpp  76  Info 725: Expected positive indentation from
+    line 72
+..\..\qk\source\qk_sched.cpp  72  Info 830: Location cited in prior message
+                     _
+        QF_INT_ENABLE();                  // unconditionally enable interrupts
+..\..\qk\source\qk_sched.cpp  78  Error 1055: Symbol 'QF_INT_ENABLE()'
+    undeclared, assumed to return int
+..\..\qk\source\qk_sched.cpp  78  Warning 534: Ignoring return value of
+    function 'QF_INT_ENABLE()' (compare with line 78) [MISRA C++ Rules 0-1-7
+    and 0-3-2], [MISRA C++ Rules 0-1-7 and 0-3-2]
+..\..\qk\source\qk_sched.cpp  78  Info 830: Location cited in prior message
+                      _
+        QF_INT_DISABLE();                                // disable interrupts
+..\..\qk\source\qk_sched.cpp  85  Error 1055: Symbol 'QF_INT_DISABLE()'
+    undeclared, assumed to return int
+..\..\qk\source\qk_sched.cpp  85  Warning 534: Ignoring return value of
+    function 'QF_INT_DISABLE()' (compare with line 85) [MISRA C++ Rules 0-1-7
+    and 0-3-2], [MISRA C++ Rules 0-1-7 and 0-3-2]
+..\..\qk\source\qk_sched.cpp  85  Info 830: Location cited in prior message
+                                               _
+    } while ((p > pin) && (p > QK_ceilingPrio_));
+..\..\qk\source\qk_sched.cpp  91  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 5-14-1, side effects on right hand of logical operator: '&&'
+                _
+#... uct _reent *)(a)->m_thread /*lint -restore */
+        QK_TLS(a);                                 // restore the original TLS
+..\..\qk\source\qk_sched.cpp  99  Note 1960: Violates MISRA C++ 2008 Required
+    Rule 17-0-2, Re-use of C++ identifier pattern: _reent
+
+--- Additional Misra Messages:
+
+Note 1960: Violates MISRA C++ 2008 Required Rule 0-1-8, Void return type for
+    function without external side-effects: QP::QPSet64::insert(unsigned char)
+    volatile
+Note 1960: Violates MISRA C++ 2008 Required Rule 0-1-8, Void return type for
+    function without external side-effects: QP::QPSet64::remove(unsigned char)
+    volatile
+Note 1960: Violates MISRA C++ 2008 Required Rule 0-1-8, Void return type for
+    function without external side-effects: QP::QPSet8::insert(unsigned char)
+    volatile
+Note 1960: Violates MISRA C++ 2008 Required Rule 0-1-8, Void return type for
+    function without external side-effects: QP::QPSet8::remove(unsigned char)
+    volatile
+
+--- Global Wrap-up
+
+Warning 526: Symbol 'QF_INT_ENABLE()' (line 78, file ..\..\qk\source\qk_sched.cpp)
+    not defined
+..\..\qk\source\qk_sched.cpp  78  Info 830: Location cited in prior message
+Warning 628: no argument information provided for function 'QF_INT_ENABLE()'
+    (line 78, file ..\..\qk\source\qk_sched.cpp)
+..\..\qk\source\qk_sched.cpp  78  Info 830: Location cited in prior message
+Warning 526: Symbol 'QF_INT_DISABLE()' (line 85, file ..\..\qk\source\qk_sched.cpp)
+    not defined
+..\..\qk\source\qk_sched.cpp  85  Info 830: Location cited in prior message
+Warning 628: no argument information provided for function 'QF_INT_DISABLE()'
+    (line 85, file ..\..\qk\source\qk_sched.cpp)
+..\..\qk\source\qk_sched.cpp  85  Info 830: Location cited in prior message
+Warning 526: Symbol 'QP::QF_INT_DISABLE()' (line 97, file ..\..\qk\source\qk.cpp)
+    not defined
+..\..\qk\source\qk.cpp  97  Info 830: Location cited in prior message
+Warning 628: no argument information provided for function 'QP::QF_INT_DISABLE()'
+    (line 97, file ..\..\qk\source\qk.cpp)
+..\..\qk\source\qk.cpp  97  Info 830: Location cited in prior message
+Warning 526: Symbol 'QP::QF_INT_ENABLE()' (line 100, file ..\..\qk\source\qk.cpp)
+    not defined
+..\..\qk\source\qk.cpp  100  Info 830: Location cited in prior message
+Warning 628: no argument information provided for function 'QP::QF_INT_ENABLE()'
+    (line 100, file ..\..\qk\source\qk.cpp)
+..\..\qk\source\qk.cpp  100  Info 830: Location cited in prior message
+Note 974: Worst case function for stack usage: 'QP::QF::run' is finite,
+    requires 73 bytes total stack in calling 'QP::initialize'. See +stack for a
+    full report. [MISRA C++ Rule 7-5-4]

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "all_qp", "all_qp.vcproj", "{D6EB21CC-7102-4D69-86F5-A67B6BFBB5EF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B05555C2-D127-4FE9-9109-602F72261F2F} = {B05555C2-D127-4FE9-9109-602F72261F2F}
+		{3081BCEF-683D-4EB4-9496-427FDA1D87F5} = {3081BCEF-683D-4EB4-9496-427FDA1D87F5}
+		{5AC2E0CD-3912-4CE9-A448-4911130B7656} = {5AC2E0CD-3912-4CE9-A448-4911130B7656}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qep", "qep.vcproj", "{B05555C2-D127-4FE9-9109-602F72261F2F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qf", "qf.vcproj", "{3081BCEF-683D-4EB4-9496-427FDA1D87F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qs", "qs.vcproj", "{5AC2E0CD-3912-4CE9-A448-4911130B7656}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Spy|Win32 = Spy|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6EB21CC-7102-4D69-86F5-A67B6BFBB5EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D6EB21CC-7102-4D69-86F5-A67B6BFBB5EF}.Debug|Win32.Build.0 = Debug|Win32
+		{D6EB21CC-7102-4D69-86F5-A67B6BFBB5EF}.Release|Win32.ActiveCfg = Release|Win32
+		{D6EB21CC-7102-4D69-86F5-A67B6BFBB5EF}.Release|Win32.Build.0 = Release|Win32
+		{D6EB21CC-7102-4D69-86F5-A67B6BFBB5EF}.Spy|Win32.ActiveCfg = Spy|Win32
+		{D6EB21CC-7102-4D69-86F5-A67B6BFBB5EF}.Spy|Win32.Build.0 = Spy|Win32
+		{B05555C2-D127-4FE9-9109-602F72261F2F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B05555C2-D127-4FE9-9109-602F72261F2F}.Debug|Win32.Build.0 = Debug|Win32
+		{B05555C2-D127-4FE9-9109-602F72261F2F}.Release|Win32.ActiveCfg = Release|Win32
+		{B05555C2-D127-4FE9-9109-602F72261F2F}.Release|Win32.Build.0 = Release|Win32
+		{B05555C2-D127-4FE9-9109-602F72261F2F}.Spy|Win32.ActiveCfg = Spy|Win32
+		{B05555C2-D127-4FE9-9109-602F72261F2F}.Spy|Win32.Build.0 = Spy|Win32
+		{3081BCEF-683D-4EB4-9496-427FDA1D87F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3081BCEF-683D-4EB4-9496-427FDA1D87F5}.Debug|Win32.Build.0 = Debug|Win32
+		{3081BCEF-683D-4EB4-9496-427FDA1D87F5}.Release|Win32.ActiveCfg = Release|Win32
+		{3081BCEF-683D-4EB4-9496-427FDA1D87F5}.Release|Win32.Build.0 = Release|Win32
+		{3081BCEF-683D-4EB4-9496-427FDA1D87F5}.Spy|Win32.ActiveCfg = Spy|Win32
+		{3081BCEF-683D-4EB4-9496-427FDA1D87F5}.Spy|Win32.Build.0 = Spy|Win32
+		{5AC2E0CD-3912-4CE9-A448-4911130B7656}.Debug|Win32.ActiveCfg = Spy|Win32
+		{5AC2E0CD-3912-4CE9-A448-4911130B7656}.Debug|Win32.Build.0 = Spy|Win32
+		{5AC2E0CD-3912-4CE9-A448-4911130B7656}.Release|Win32.ActiveCfg = Spy|Win32
+		{5AC2E0CD-3912-4CE9-A448-4911130B7656}.Release|Win32.Build.0 = Spy|Win32
+		{5AC2E0CD-3912-4CE9-A448-4911130B7656}.Spy|Win32.ActiveCfg = Spy|Win32
+		{5AC2E0CD-3912-4CE9-A448-4911130B7656}.Spy|Win32.Build.0 = Spy|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
