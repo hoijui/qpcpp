@@ -113,6 +113,7 @@ scheduler:
 svc_ret:
     CPSIE   i                 /* enable interrupts to allow SVC exception   */
     SVC     0                 /* SV exception returns to the preempted task */
+    /*.hword 0xDF00 */
     .size   PendSV_Handler, . - PendSV_Handler
 
 
